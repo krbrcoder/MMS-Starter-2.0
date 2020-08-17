@@ -1,0 +1,93 @@
+// _tiled.scss
+
+.tiled-listing {
+	ul {
+		clear: both;
+		list-style: none;
+		margin-bottom: 0;
+		padding-left: 0 !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: flex-start;
+    align-items: stretch;
+    font-size:1rem;
+		li {
+			border: solid 1px $hazy;
+			transition-property: transform, opacity;
+			transition-duration: 0.7s;
+			margin: 0 10px 15px 0;
+			box-shadow: 0 4px 12px #eee;
+			text-align: center;
+  		.img-area {
+    		width: 100%;
+    		display: block;
+    		background: $hazy;
+  		}
+  		img {
+    		margin: 0 auto;
+    		box-shadow: 0 4px 10px #ccc;
+  		}
+			p {
+  			padding: 0 20px 10px;
+  			width: 100%;
+  			text-align: left;
+			}
+			h3, .h3 {
+  			font-size: 1.1rem;
+  			margin: .65rem;
+  			display: block;
+			}
+			a.accesslink {
+  			font-size: 1.5em;
+      }
+			.fa {
+  			font-size: 0.85rem;
+			}
+			.attachment-thumbnail {
+  			margin-right: 20px;
+  			margin-bottom: 10px;
+			}
+			&:hover {
+				background-color: $hazy;
+			}
+			.img-fluid {
+  			margin-bottom: 20px;
+			}
+		}
+  }
+}
+
+
+@media (max-width:510px) {
+  .tiled-listing {
+  	ul {
+  		&.col2 > li {
+      	width: 100%;
+  		}
+  		&.col3 > li {
+      	width: 100%;
+  		}
+  		&.col4 > li {
+      	width: 100%;
+  		}
+		}
+  }
+}
+@media (min-width:511px) {
+  .tiled-listing {
+  	ul {
+    &.col2 > li {
+    	width: 48%;
+		}
+		&.col3 > li {
+    	width: 31%;
+		}
+		&.col4 > li {
+    	width: 23%;
+		}
+
+    }
+  }
+}

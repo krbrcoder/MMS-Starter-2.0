@@ -1,0 +1,89 @@
+// _variables.scss
+
+ /* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+// Variables
+$tilecolor: #2c7754;
+$bodybgcolor: #CCC;
+$white: #ffffff;
+$mmsblue: #124661;
+$yellow: #ffd971;
+$yellowdark: darken($yellow, 15%);
+$utblue:  #44697D;
+$utorange: #BD4F19;
+$turquoise: #2c98ad;
+$orange: #E86023;
+$paleblue: #7EB0CC;
+$lightenpageblue: #e7eff2;
+$hazy: #F4F6F7;
+$white: #ffffff;
+$turquoise: #2c98ad;
+$turquoisedark: darken($turquoise, 15%);
+$mmslink: #337ab7;
+$mmslinkdark: darken($mmslink, 15%);
+
+//Grays
+$lightergray: #D0D0D0;
+$lightgray: #F4F7FA;
+$gray: #E7E7E7;
+$darkgray: #3C3C3C;
+
+// Maincolors
+$primarycolor: $mmsblue;
+$pseudocolor: complement($primarycolor);
+$secondarycolor: $utorange;
+$accentcolor: lighten($primarycolor, 7%);
+
+// Lighten Colors
+$primarylight: lighten($primarycolor, 5%);
+$secondarylight: lighten($secondarycolor, 10%);
+$accentlight: lighten($accentcolor, 10%);
+$pseudolight: lighten($pseudocolor, 10%);
+$primarylighter: lighten($primarylight, 10%);
+$primarylightest: lighten($primarylighter, 58%);
+$primaryfade: opacify($primarylightest, .1);
+
+// Darken Colors
+$primarydark: darken($primarycolor, 10%);
+$secondarydark: darken($secondarycolor, 10%);
+$accentdark: darken($accentcolor, 10%);
+$pseudodark: darken($pseudocolor, 10%);
+$orangedark: darken($orange, 10%);
+$tealdark: darken($turquoise, 10%);
+
+$primarydarker: darken($primarydark, 10%);
+
+$secondarynav_link_color: $white;
+
+//Typography & font
+$proximacondensed: "proxima-nova-alt-ext-cond", "Proxima Nova Condensed", sans-serif; //"adobe-garamond-pro", "Garamond", Georgia, serif;
+$proxima: "proxima-nova", "Proxima Nova", sans-serif;
+$primaryfont: $proxima;
+$titlefont: $proxima;
+$servicestitlefont: $proximacondensed;
+$primarytextcolor: #232323;
+
+$linkcolor: $mmslink;
+$linkhovercolor: $mmslinkdark;
+$linktransition: all 500ms;
+$lineheight: 1.6;
+
+$main-content-padding: 20px 0;
+
+// Main Navigation Variables
+
+// DESKTOP
+$navbar-text: $primarydark;
+$navbar-bg: $hazy;
+$navbar-font-size:0.85em;
+$dropdown-text: darken($navbar-text, 10%);
+$dropdown-bg: darken($navbar-bg, 10%);
+
+// MOBILE
+$mobile-navbar-text: $navbar-bg;
+$mobile-navbar-bg: $navbar-text;
+$mobile-navbar-font-size:0.5em;
+$mobile-dropdown-text: darken($mobile-navbar-text, 10%);
+$mobile-dropdown-bg: darken($mobile-navbar-bg, 10%);
+$mobile-slide-navigation: all 200ms;

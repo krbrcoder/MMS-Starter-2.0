@@ -1,0 +1,117 @@
+// _leftsidebar.scss
+
+$sidebar-bg: $lightgray;
+$sidebar-link-color: $primarycolor;
+$sidebar-link-hover-color: $darkgray;
+$sidebar-link-hover-bg: fade($darkgray, 20%);
+$disabled-sidebar-link-color: $linkcolor;
+$sidebar-font-size: 14px;
+
+#left {
+  margin: 25px 0 50px 0;
+  font-size: .85rem;
+  li.page_item_has_children {
+    &.current_page_parent ul.children, &.current_page_item ul.children, &.current_page_ancestor ul.children {
+      display: block;
+    }
+    ul.children {
+      display:none;
+    }
+  }
+  li.page_item.current_page_item {
+    background: $primarycolor;
+    a {
+      color: white;
+    }
+    ul.children li.page_item {
+      a {
+        color: $darkgray;
+        &:hover, &:active, &:focus {
+          color: white;
+        }
+      }
+    }
+  }
+  li.tabbed-child {
+    background-color: $hazy;
+    border-left: 10px solid white;
+    &-child {
+      background-color: $hazy;
+      border-left: 15px solid white;
+    }
+  } 
+  ul.children li.page_item.current_page_item {
+    background: $primarycolor;
+    a {
+      color: white;
+    }
+  }
+  li.page_item.current_page_item {
+    background: $primarycolor;
+  }
+  h3 {
+    font-size: 1rem;
+    padding: 30px 0 0 10px;
+    margin: 0 0 20px;
+    a {
+      color: $darkgray;
+      &:hover, &:active, &:focus {
+        color: $primarycolor;
+      }
+    }
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      background: $lightenpageblue;
+      border-left: 5px solid white;
+      border-radius: 0;
+      a {
+        padding: 10px 0 10px 10px;
+        border-top: 1px solid white;
+        display: block;
+        color: black;
+        font-weight: 100;
+        &:hover, &:active, &:focus {
+          background-color: $primarydark;
+          color: white;
+        }
+      }
+      ul li {
+        background: $hazy;
+        a {
+          color: black;
+        }
+      }
+    }
+  }
+  a {
+    color: $sidebar-link-color;
+  }
+}
+
+@media (min-width:20px) and (max-width:431px){
+  #left a {
+    padding: 10px;
+  }
+}
+@media (min-width:432px) and (max-width:767px){
+}
+@media (min-width:768px) and (max-width:991px){
+}
+@media (min-width:992px) and (max-width:1199px){
+  .secondarynav{
+	  &.fixed{
+		  width:215px;
+	  }
+  }
+}
+@media (min-width:1200px){
+	.secondarynav{
+		  &.fixed{
+			  width:265px;
+		  }
+	  }
+}

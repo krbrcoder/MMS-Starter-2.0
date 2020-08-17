@@ -1,0 +1,90 @@
+/* style.scss */
+
+@import 'variables';
+
+	body {
+  position: relative;
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1200px;
+	}
+}
+
+@media (min-width: 20px) and (max-width: 767) {
+body {
+font-size: 14px;
+font-size: 1rem;
+	}
+}
+
+
+//@media (min-width:20px) and (max-width:432px){}
+//@media (min-width:433px) and (max-width:767px){}
+//@media (min-width:768px) and (max-width:991px){}
+//@media (min-width:992px) and (max-width:1199px){}
+//@media (min-width:1200px){}
+
+ /* -----------------------------------------
+   NAVBAR
+----------------------------------------- */
+@import 'nav';
+@import 'supernav';
+@import 'sidebar';
+
+
+ /* -----------------------------------------
+   Main Content
+----------------------------------------- */
+@import 'maincontent';
+@import 'news';
+@import 'animation';
+@import 'accordions';
+@import 'carousel';
+@import 'livesearch';
+@import 'video';
+@import 'calendar';
+//@import 'testing';
+@import 'tiled';
+@import 'twitter';
+@import 'homepage';
+
+ /* -----------------------------------------
+   Services
+----------------------------------------- */
+@import 'services';
+
+ /* -----------------------------------------
+   Typography
+----------------------------------------- */
+@import 'typography';
+@import 'buttons';
+
+ /* -----------------------------------------
+   Events
+----------------------------------------- */
+@import 'events';
+
+ /* -----------------------------------------
+   Faculty Listing and Single
+----------------------------------------- */
+@import 'faculty';
+
+ /* -----------------------------------------
+   Footer
+----------------------------------------- */
+@import 'footer';
+
+ /* -----------------------------------------
+   Wordpress Defaults
+----------------------------------------- */
+@import 'wordpress-core';
+

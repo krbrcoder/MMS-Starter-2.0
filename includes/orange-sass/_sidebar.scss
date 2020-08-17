@@ -1,0 +1,222 @@
+// _sidebar.scss
+
+$sidebar-bg: $lightgray;
+$sidebar-link-color: $primarycolor;
+$sidebar-link-hover-color: $darkgray;
+$sidebar-link-hover-bg: fade($darkgray, 20%);
+$disabled-sidebar-link-color: $linkcolor;
+$sidebar-font-size: 14px;
+
+#left-sidebar {
+  margin: 20px 0 50px 0;
+  font-size: .85rem;
+  .single-post-meta {
+    border-bottom: 1px dotted #CCC;
+    padding-bottom: 20px;
+    font-size: 90%;
+    > a.post-tag{
+      padding: 2px 4px;
+      border: 1px solid $gray;
+      &:hover, &:focus, &:active {
+        background: $gray;
+      }
+    }
+    p, h1, h2, h3, h4, h5, h6 {
+      padding-left: 6px;
+    }
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      background: $lightenpageblue;
+      border-left: 5px solid white;
+      border-radius: 0;
+      a {
+        padding: 10px;
+        border-top: 1px solid white;
+        display: block;
+        color: black;
+        font-weight: 100;
+        font-size: 14px;
+        &:hover, &:active, &:focus {
+          background-color: $primarydark;
+          color: white;
+        }
+      }
+      ul li {
+        background: $hazy;
+        a {
+          color: black;
+        }
+      }
+    }
+    .children li.page_item.current_page_item {
+      background: $primarycolor;
+      a {
+        color: white;
+      }
+    }
+    &.tabbed-menu li a.active {
+      background: $primarycolor;
+      color: white;
+      font-weight: 500;
+    }
+  }
+  li {
+    &.page_item_has_children {
+      &.current_page_parent, &.current_page_ancestor, &.current_page_item {
+        ul.children {
+          display: block;
+        }
+      }
+      ul.children {
+        display:none;
+      }
+    }
+    &.page_item.current_page_item {
+      background: $primarycolor;
+      a {
+        color: white;
+      }
+      ul.children li.page_item {
+        a {
+          color: $darkgray;
+          &:hover, &:active, &:focus {
+            color: white;
+          }
+        }
+      }
+    }
+    &.tabbed-child {
+      background-color: $hazy;
+      border-left: 10px solid white;
+      &-child {
+        background-color: $hazy;
+        border-left: 15px solid white;
+      }
+    }
+  }
+  h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0 0 0 5px;
+    margin: 0 0 10px;
+    a {
+      color: $darkgray;
+      &:hover, &:active, &:focus {
+        color: $primarycolor;
+      }
+    }
+  }
+  a {
+    color: $sidebar-link-color;
+  }
+  /*********** BREADCRUMBS **********/
+
+  > .breadcrumb {
+    padding: 20px 5px 0;
+    background-color: transparent;
+    color: $darkgray;
+    font-size: 1.05rem;
+    &:active {
+      color: $darkgray;
+    }
+    li {
+      padding: 0;
+      font-size: 0.75em;
+      background-color: inherit;
+      a {
+        width: 100%;
+        border-top: none;
+      }
+      &:first-child {
+        &:before {
+          content: none;
+        }
+      }
+      &+li:before {
+        content: '\00BB';
+      }
+      &:last-child {
+        display: none;
+
+      }
+    }
+  }
+}
+
+#right-sidebar {
+  margin: 20px 0 50px 0;
+  font-size: .85rem;
+  .section-header {
+    padding-left: 0;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 25px;
+    li {
+      background: $lightenpageblue;
+      border-radius: 0;
+      a {
+        padding: 10px;
+        border-top: 1px solid white;
+        display: block;
+        color: black;
+        font-weight: 100;
+        &:hover, &:active, &:focus {
+          background-color: $primarydark;
+          color: white;
+        }
+      }
+      ul li {
+        background: $hazy;
+        a {
+          color: black;
+        }
+      }
+    }
+  }
+  h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 0 10px;
+    a {
+      color: $darkgray;
+      &:hover, &:active, &:focus {
+        color: $primarycolor;
+      }
+    }
+  }
+  a {
+    color: $sidebar-link-color;
+  }
+}
+
+@media only screen and (max-width:767px) {
+  #left-sidebar {
+    margin: 0;
+    padding-left: 10px;
+  }
+}
+@media (min-width:768px) and (max-width:991px){
+}
+@media (min-width:992px) and (max-width:1199px){
+  .secondarynav{
+	  &.fixed{
+		  width:215px;
+	  }
+  }
+}
+@media (min-width:1200px){
+	.secondarynav{
+		  &.fixed{
+			  width:265px;
+		  }
+	  }
+}

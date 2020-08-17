@@ -1,0 +1,121 @@
+.txtac-tab-container{
+	width: 100%;
+	display: inline-block;
+	margin: 0 auto;
+    border: 1px solid #ccc;
+}
+
+.vertical-left-tab{
+	width: 20%;
+	display: inline-block;
+    vertical-align: top;
+}
+
+.vertical-tab-content{
+	width: 79%;
+	display: inline-block;
+    border-left: 1px solid #ccc;
+}
+
+.vertical-tab-links:after {
+    display:block;
+    clear:both;
+    content:'';
+}
+ 
+.horizontal-tab-links:after {
+    display:block;
+    clear:both;
+    content:'';
+}
+
+.vertical-tab-links li {
+    margin:0px 5px;
+    list-style:none;
+}
+
+.horizontal-tab-links a {
+  margin: 0px -5px 10px;
+    padding: 0 13px 5px;
+  display: inline-block;
+  /* border-radius: 3px 3px 0px 0px; */
+  background: none;
+  font-size: 14px;
+  /* font-weight: 600; */
+  color: #4c4c4c;
+  
+  text-decoration: none;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.vertical-tab-links a{
+
+  padding: 20px 15px;
+  display: inline-block;
+  
+  background: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #4c4c4c;
+ 
+  border-bottom: 1px solid #ccc;
+  width: 86%;
+  text-decoration: none;
+}
+
+ 
+.vertical-tab-links a:hover, .horizontal-tab-links a:hover {
+    background:#a7cce5;
+    text-decoration:none;
+}
+ 
+li.active a, li.active a:hover {
+    background:#ccc;
+    color:#4c4c4c;
+}
+
+.vertical-right-tab {
+    display:none;
+      margin: 5px;
+}
+ 
+.vertical-right-tab.active {
+    display:block;
+}
+
+
+.horizontal-down-tab {
+    display:none;
+}
+ 
+.horizontal-down-tab.active {
+    display:block;
+}
+
+.horizontal-tab-links li {
+        margin:0px 5px;
+        float:left;
+        list-style:none;
+    }
+
+
+fieldset{
+    padding: 10px;
+}
+
+.horizontal-up-tab {
+  border-bottom: 1px solid #ccc;
+}
+
+textarea {
+  width: 50%;
+  height: 150px;
+}
+
+
+
+
+ #wp-inpatient_facilities-wrap {
+  max-width: 80% !important;
+}

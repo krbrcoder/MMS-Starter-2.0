@@ -1,0 +1,79 @@
+// _accordions.scss
+
+.panel-title {
+	a {
+		h4 {
+			margin: 0px;
+			padding: 15px 28px 15px 18px;
+			background-color: $hazy;
+			color: $primarycolor;
+			font-family: $primaryfont;
+			font-size: 1em;
+			border-radius: 0;
+			border-bottom: 1px dotted $lightgray;
+			box-shadow: 0px 1px 1px #EDEDED;
+			-webkit-box-shadow: 0px 1px #EDEDED;
+			&:hover,
+			&:active,
+			&:focus {
+				color:white;
+				background-color: $accentlight;
+				transition: all .5s;
+			}
+		}
+	}
+}
+
+a.accordion-toggle {
+	& h4::after {
+		position: relative;
+		float: right;
+		top: 1px;
+		right: -10px;
+		font-family: 'FontAwesome';
+		font-size: .85em;
+		content: "\f0d7";
+	}
+	&.collapsed h4::after {
+		content: "\f0da";
+	}
+}
+
+.panel-collapse.collapse {
+	margin-bottom: 15px;
+	.panel-body {
+		margin:-9px 0 0;
+		padding:1rem;
+	}
+	ul {
+		margin: 0 10px;
+		padding: 0;
+		li {
+			padding: 10px 20px !important;
+			font-size: .95em;
+			list-style-type: none;
+			line-height: 1.35em;
+			color: $darkgray;
+			&:hover,
+			&:focus,
+			&:active {
+				background-color: fade($accentlight, 25%) !important;
+//				color: $accent;
+	      transition: all 1s;
+				padding: 10px 20px !important;
+			}
+			strong, em {
+				color: $darkgray;
+			}
+			&:nth-child(even) {
+				background-color: white;
+			}
+			&:nth-child(odd) {
+				background-color: #EDEDED;
+			}
+			li {
+
+			}
+		}
+	}
+}

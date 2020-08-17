@@ -1,0 +1,515 @@
+// _typography.scss
+
+// DEFINED VARIABLES
+
+/*
+Standard Font Size is set to 1.125rem / 1.125em
+Standard Line Height is set to 32px / 1.75em
+Scaling Factor is 1.75em
+*/
+
+body {
+  font-family: $primaryfont;
+  font-weight: 400;
+  font-style: normal;
+  line-height: $lineheight;
+  p {
+    margin: 0 auto 1rem;
+  }
+}
+
+pre {
+  white-space: pre-wrap;
+  padding: 8px;
+  background-color: $hazy;
+}
+
+dt {
+  font-weight: 400;
+  margin-bottom: 0.625rem;
+}
+
+a {
+  color: $linkcolor;
+  transition: $linktransition;
+  font-weight: 600;
+  &:hover, &:active {
+    color: $linkhovercolor;
+  }
+  &:focus {
+    color: $linkhovercolor;
+    text-decoration: underline !important;
+  }
+}
+
+.highlight {
+  background-color: $yellow;
+}
+
+.text-white {
+  color: white;
+  > a {
+    color: white !important;
+  }
+}
+
+
+hr {
+  width: 100%;
+  display: block;
+  margin: 1.5rem 0;
+}
+
+.text {
+  &-center {
+    text-align: center;
+  }
+}
+#deplogo {
+	font-family: $titlefont;
+  h1, .h1, h2, .h2 {
+    font-size: 46px;
+    a {
+      font-weight: 400;
+      color: $primarycolor;
+      transition: $linktransition;
+      &:hover,
+      &:focus {
+        text-decoration: none;
+        color: $secondarydark;
+        outline: none;
+				border: none;
+      }
+    }
+  }
+  .mms-text {
+    font-size: 0.875rem;
+    display: block;
+    color: $primarydark;
+  }
+}
+.mobile-mms-text {
+  display: block;
+  margin: 0 auto;
+  float: left;
+  text-align: center;
+  width: 100%;
+  margin-top: 13px;
+  font-size: .8rem;
+}
+
+.framedtitle {
+  display: inline;
+  font-weight: normal;
+  font-size: 0.625rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  margin: 0;
+
+  &.primarycolor {
+    background: $primarycolor;
+    color: #FFF;
+  }
+
+  &.accentcolor{
+    background: $accentcolor;
+    color: #FFF;
+  }
+}
+
+#overview{
+  .sublead{
+		font-family: $primaryfont;
+		font-weight: bold;
+    font-size: 0.9375rem;
+    line-height: 1.8;
+    margin-top:0.625rem;
+    letter-spacing: -.0125em;
+    color: #444444;
+  }
+  .overview{
+    font-size: 0.875rem;
+    text-align: right;
+		font-family: $primaryfont;
+  }
+}
+
+.smallerlist{
+  li{
+    font-size: 0.75rem;
+  }
+}
+
+.dl-horizontal dt {
+	overflow: visible;
+	white-space: normal;
+	text-overflow: inherit;
+	margin-bottom: 0.9375rem;
+	line-height: 1.328571429;
+}
+
+.top-of-page {
+//  border-top: 1px solid $lightgray;
+//  border-bottom: 1px solid $lightgray;
+}
+
+.readmorelink{
+  text-align: right;
+  font-weight: 400;
+}
+
+.border {
+	border-bottom: 1px solid $lightgray;
+}
+
+#calendar-news-section {
+  #news, #department-area {
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    > li {
+      border-bottom: 1px dotted $darkgray;
+      padding: 4px 0;
+      line-height: 1.35rem;
+      a {
+        font-size: 0.9375rem;
+      }
+      &.gfield {
+        border-bottom: none;
+      }
+      &.news-archive {
+        padding-top: 10px;
+        border-bottom: none;
+        a {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
+.lead {
+  font-size: inherit !important;
+}
+.titlecontent {
+  p, body, pre, table, blockquote {
+    margin-top: .64em;
+    margin-bottom: 1.7777777777777777em;
+  }
+}
+
+#main-area a {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.maincontent {
+  p, body, pre, table, blockquote {
+    margin-top: .64em;
+//		margin-bottom: 1.7777777777777777em;
+		margin-left: 0;
+  }
+  p:first-child {
+    margin-top: 0;
+  }
+  ol.lower-alpha {
+    list-style-type: lower-alpha;
+  }
+  ol.search-results {
+    padding-left: 18px;
+  }
+  #right {
+    ol, ul {
+      li {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  b, strong, em, small, code {
+    line-height: 1;
+  }
+  sup {
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+    top: -0.5em;
+  }
+  sub {
+    bottom: -0.25em;
+  }
+  a {
+    color: $linkcolor;
+    font-weight: bold;
+    transition: $linktransition;
+    &:hover,
+    &:focus{
+      color: $linkhovercolor;
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+    color: inherit;
+    font-weight: 500;
+    font-family: $titlefont;
+    margin: 1rem 0 1rem;
+    > a {
+      color: $linkcolor;
+      text-decoration: underline;
+      &:hover, &:focus, &:active {
+        color: $linkhovercolor;
+      }
+    }
+  }
+
+  h1, .h1 {
+    font-size: 2.375rem; // 38px;
+  }
+
+  h2, .h2 {
+    font-size: 2rem; // 32px;
+   & #top {
+     margin-top: 0;
+     font-size: 2.25em;
+   }
+  }
+
+  h3, .h3 {
+    font-size: 1.5rem; // 24px;
+  }
+
+  h4, .h4 {
+    font-size: 1.25rem; // 20px
+  }
+  .section-header {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-left: 6px;
+    letter-spacing: -0.01em;
+    color: $primarycolor;
+    font-size: 14px;
+    display: block;
+  }
+  ul, ol {
+    padding: 0 0 0 35px;
+  	li {
+  	//	padding-bottom: 8px;
+  	}
+	}
+  small{
+	  font-weight: normal;
+	  font-size:.75em;
+  }
+
+	td {
+		padding: 5px;
+	}
+	.wp-caption-text {
+  	font-size: .75rem;
+    margin: 0 0 -3px;
+    padding: 5px 0 0;
+    line-height: normal;
+	}
+}
+
+blockquote {
+	padding: 1rem 1.25rem .75rem;
+	margin: 30px 0;
+	border-left: 3px solid $accentdark;
+	background-color: $lightgray;
+	p {
+		width: 100%;
+	}
+	a {
+		color: $primarydarker;
+		text-decoration: underline;
+	}
+}
+
+
+.spotlight {
+  a {
+    color: white;
+    &:hover, &:focus, &:active {
+      color: lighten($linkhovercolor, 5%);
+    }
+  }
+  // ADD PART FOR WHEN IN COLORED DARK BOX
+}
+
+.small {
+  font-weight: normal;
+  font-size:.75em;
+}
+
+hr.spacer {
+  height: 50px;
+  margin: 0;
+  border: none;
+}
+
+.decimal {
+  list-style: decimal;
+}
+
+ul.display-posts-listing {
+  display: block;
+  margin: 10px 10px 0;
+  font-size: .85em;
+  padding: 0;
+  li.listing-item {
+    width: 100%;
+    margin: 0 0;
+    padding: 5px 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px dotted black;
+    box-shadow: none;
+  }
+}
+
+.tablepress {
+  td {
+    padding: 9px 18px;
+  }
+  img {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width:432px){
+  #calendar-news-section, #module-page-section {
+    padding: 30px 1.25rem !important;
+    h4, .h4 {
+      font-size: 1.2em;
+    }
+    figure {
+      margin: 1.25rem auto !important;
+    }
+    #calendar {
+      border-bottom: 1px solid $gray;
+      margin-bottom: 10%;
+    }
+  }
+  body, p {
+    font-size: 0.9375rem;
+  }
+  .breadcrumb {
+    display: none;
+  }
+  #titlebar{
+    h1{
+      font-size: 1.25rem;
+      color: $primarycolor;
+    }
+  }
+  #deplogo {
+    margin: 20px 0 0;
+    text-align: center;
+    h1, .h1, h2, .h2 {
+      font-size: 26px;
+      line-height: .8;
+      margin-top: 1rem;
+
+    }
+    .mms-text {
+      display: none;
+    }
+  }
+}
+
+  #deptsearchsubmit-site {
+    font-size: 1rem;
+    margin: 0;
+    padding: 3px 14px;
+    background: $primarydark;
+    &:hover, &:active, &:focus {
+      background: $secondarydark;
+    }
+  }
+
+
+
+@media (min-width:433px) and (max-width:767px){
+  #calendar-news-section, #module-page-section {
+    padding: 30px 40px !important;
+    h4, .h4 {
+      font-size: 1.2em;
+    }
+    figure {
+      margin: 1.25rem auto !important;
+    }
+  }
+  body, p {
+    font-size: 1rem;
+  }
+  .breadcrumb {
+    display: none;
+  }
+  #titlebar{
+    h1{
+      margin: 13px 0;
+      color: $primarycolor;
+    }
+  }
+  #deplogo {
+    margin: 20px 0 0;
+    text-align: center;
+  }
+  .mms-text {
+    display: none;
+  }
+}
+@media (min-width:768px) and (max-width:991px){
+  body, p {
+    font-size: 1rem;
+  }
+  .breadcrumb {
+    margin: 1em 0 0;
+  }
+  #titlebar{
+    h1{
+      margin: 13px 0;
+      color: $primarycolor;
+    }
+  }
+}
+@media (min-width:992px) and (max-width:1199px){
+	#overview{
+	  .sublead{
+	    font-size: 97%;
+	    line-height: 1.8;
+	    margin-top:0.625rem;
+	  }
+	  .overview{
+	    font-size: 0.6875rem;
+	    text-align: right;
+	  }
+	}
+  body, p {
+    font-size: 1.125rem;
+  }
+  .breadcrumb {
+    margin: 1.75em 0 0;
+  }
+  #titlebar{
+    h1{
+      margin: 13px 0;
+      color: $primarycolor;
+    }
+  }
+}
+@media (min-width:1200px){
+  body, p {
+    font-size: 1.125rem;
+  }
+  #titlebar{
+    h1{
+      margin: 13px 0;
+      color: $primarycolor;
+    }
+  }
+}

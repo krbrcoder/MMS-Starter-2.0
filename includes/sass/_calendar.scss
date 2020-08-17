@@ -1,0 +1,100 @@
+// _calendar.scss
+
+#calendar {
+  h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    margin-bottom: 22px;
+  }
+  .calendar-entry {
+    width: 95%;
+    height: auto;
+    float: left;
+    border-bottom: 1px solid #eeeeee;
+    margin-bottom: 5%;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  .calendar-date-month {
+    display: block;
+    float: left;
+    background: $gray;
+    padding: 10px 0 15px;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    width: 30%;
+    .date {
+      font-size: 60px;
+      display: block;
+      text-align: center;
+      letter-spacing: -1px;
+      color: $primarydark;
+    }
+    .month {
+      font-size: 12px;
+      display: block;
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+      color: $primarydark;
+    }
+  }
+  
+  .calendar-info {
+    float: left;
+    width: 65%;
+    line-height: 1;
+    margin-bottom: 20px;
+    .calendar-title {
+      display: block;
+      font-size: 15px;
+//      font-weight: 700;
+      line-height: 1.35em;
+      margin-bottom: 10px;
+      padding-top: 15px;
+    }
+    .calendar-time {
+      display: block;
+      font-size: 13px;
+      line-height: 1.85em;
+    }
+    .calendar-location {
+      display: block;
+      font-size: 13px;
+      line-height: 1em;
+      margin-bottom: 20px;
+    }
+    .calendar-description {
+      font-size: 12px;
+      line-height: .85em;
+    }
+    .readmore {
+      font-size: 12px;
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (min-width:432px) and (max-width:991px){
+  #calendar {
+    .calendar-date-month {
+      .date {
+        font-size: 44px;
+      }
+      .month {
+        
+      }
+    }
+    .calendar-info {
+      .calendar-title {
+        padding-top: 0;
+      }
+      .calendar-location {
+        margin-bottom: 1em;
+      }
+    }
+  }
+}
+
+ .st-dtitle.st-dtitle-fr.st-dtitle-fc.st-dtitle-nonmonth {
+   color: #696969 !important;
+ }

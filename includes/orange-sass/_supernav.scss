@@ -1,0 +1,139 @@
+// _supernav.scss
+
+#supernav{
+	min-height: 34px;
+	padding: 0;
+	background-color: $lightgray;
+	.navbar-collapse{
+		padding-left: 0;
+	}
+	.navbar-nav{
+		padding: 3px 7px;
+		margin: 0;
+		li{
+  		float: left;
+			a{
+  			color: black;
+				padding:0;
+				font-size: 11px;
+				text-transform: uppercase;
+				font-family: $primaryfont;
+				font-weight: normal;
+				margin: 0 18px 0 0;
+				transition: $linktransition;
+				&:hover, &:active {
+  				color: $darkgray;
+				}
+			}
+		}
+	}
+  // SEARCH BUTTON
+  #search {
+    float: right;
+    >.btn.search {
+      background-color: inherit;
+    	color: $primarycolor;
+    	border-radius: 0;
+    	transition: 1s;
+    	padding: 3px;
+    	margin: 0;
+    	&:hover, &:active, &:focus {
+      	color: black;
+    	}
+  	}
+  }
+}
+
+// SEARCH BAR
+#search-container {
+  background-color: $gray;
+  padding: 8px;
+  width: 100%;
+  float: left;
+	#gs{
+		margin: 0;
+		padding: 0;
+		#q{
+			height: 32px;
+			padding: 0 6px;
+			font-family: $primaryfont;
+			font-size: 13px;
+			font-weight: normal;
+			border: none;
+			border-radius: 0;
+		}
+		#supersubmit{
+			padding: 7px 11px;
+			border-radius: 0;
+			border: none;
+		}
+  	.form-group {
+    	margin-bottom: 0;
+  	}
+	}
+}
+
+
+#superfooter{
+	ul{
+		li{
+			a{
+				font-size: 80%;
+			}
+		}
+	}
+}
+
+@media (min-width:20px) and (max-width:767px) {
+  #supernav .navbar-nav li {
+  	&.UTH, &.People, &.News, &.Giving {
+    	display: none;
+  	}
+  }
+}
+
+@media (min-width:768px) and (max-width:991px){
+
+	#supernav{
+		.navbar-nav{
+			li{
+				a{
+					margin-right:12px;
+					letter-spacing: normal;
+				}
+      	&.UTH, &.MMS, &.People, &.WebMail, &.News, &.Giving {
+        	.fa {
+          	display: none;
+        	}
+      	}
+			}
+		}
+		#gs{
+			padding-bottom: 5px;
+		}
+	}
+
+}
+@media (min-width:992px) and (max-width:1199px){
+
+	#supernav{
+		.navbar-nav{
+			li{
+				a{
+					margin:6px 10px 0 0;
+					letter-spacing: normal;
+				}
+      	&.UTH, &.MMS, &.People, &.WebMail, &.News, &.Giving {
+        	.fa {
+          	display: none;
+        	}
+      	}
+			}
+		}
+	}
+
+}
+@media (min-width:1200px){
+
+
+}

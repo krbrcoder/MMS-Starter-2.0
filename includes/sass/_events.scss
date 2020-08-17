@@ -1,0 +1,45 @@
+// _events.scss
+
+.google-events-holder{
+	.event-date{
+		font-weight: 600;
+		display: block;
+		padding-top:10px;
+		margin-bottom: 0px;
+		text-transform: uppercase;
+		font-style: italic;
+		color: $secondarycolor;
+	}
+	.single-event{
+		display: block;
+		padding: 8px 0;
+		margin-bottom: 5px;
+		border-bottom: 1px dashed #ccc;
+		font-weight: 300;
+		.single-event-description{
+			font-size: 12px;
+		}
+		.single-event-title{
+			
+		}
+		.single-event-time{
+			color: $primarycolor;
+			font-style: italic;
+		}
+		.single-event-location{
+			font-weight: bold;
+		}
+	}
+
+}
+
+@media (min-width:768px) and (max-width:991px){
+
+}
+@media (min-width:992px) and (max-width:1199px){
+
+}
+@media (min-width:1200px){
+
+
+}

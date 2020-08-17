@@ -1,0 +1,166 @@
+// _footer.scss
+
+#footer{
+	z-index: 501;
+	background: #EEE;
+	border-top:1px solid #CCC;
+	font-size: .85rem;
+  #mms-logo-footer {
+  	> a {
+    	> img {
+      	max-width: 283px;
+      	width: 100%;
+      	margin-top: 10px;
+      }
+    	> span {
+      	display: none;
+    	}
+  	}
+  }
+	.footer {
+  	padding: 35px;
+  	.input-group-btn > .btn {
+    	background-color: white;
+    	border: 1px solid $gray;
+    	padding: 1px 9px;
+    	margin: 0;
+    	color: $primarydark;
+    	font-size: 17px;
+  	}
+  	ul {
+    	list-style-type: none;
+    	padding-left: 0;
+  		li {
+  			font-size: 14px;
+  		}
+    }
+    .social {
+      margin-top: 25px;
+      > li {
+        padding: 6px;
+        width: 30px;
+        height: 30px;
+        list-style-type: none;
+        display: inline-flex;
+        background-color: $primarytextcolor;
+        border-radius: 50%;
+        transition: background-color 5ms;
+        &:hover, &:focus, &:active {
+          background-color: $primarylight;
+        }
+        > a {
+          color: white;
+          margin: 0 auto;
+          line-height: 1.5em;
+        }
+      }
+    }
+  	address {
+    	margin: 20px 0;
+    	p {
+      	font-size: 14px;
+    	}
+  	}
+	}
+	h5, .h5 {
+		border-bottom: 1px solid #ccc;
+		padding-bottom: 10px;
+		font-weight: bold;
+		font-size: 18px;
+		display: block;
+		a {
+  		font-weight: bold;
+		}
+	}
+	.list-unstyled li a, .widgetcontent ul li a {
+  	font-size: 13px;
+  	font-weight: 500;
+	}
+	form{
+		margin: 10px 0;
+	}
+	a{
+		color: #333;
+		&:hover, &:active{
+			color: $secondarydark;
+		}
+	}
+	img.logo {
+  	margin: 0 0 20px;
+  	width: 100%;
+	}
+	#superfooter {
+  	background: white;
+  	padding: 10px 0;
+  	min-height: auto;
+  	height: auto;
+  	font-size: 1em;
+  	h6, .h6 {
+    	font-size: 12px;
+  	}
+	}
+	.fa {
+  	width: 17px;
+  	text-align: center;
+	}
+}
+
+#superfooter {
+  body, p, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, li {
+    color: black;
+    line-height: 1.5em;
+  }
+  a {
+    color: darken($utorange, 12%);
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  .logo {
+    max-width: 283px;
+    width: 100%;
+    margin: 15px auto 20px;
+  }
+  .list-unstyled li a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width:431px){
+	#mms-logo-footer {
+    text-align: center;
+  	> a > img {
+    	margin-bottom: 10px;
+    }
+  }
+  #copyright {
+    text-align: center;
+    .list-unstyled {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width:432px) and (max-width:767px){
+	#mms-logo-footer {
+    text-align: center;
+  	> a > img {
+    	margin-bottom: 10px;
+    }
+  }
+  #copyright {
+    text-align: center;
+    .list-unstyled {
+      margin-bottom: 0;
+    }
+  }
+}
+@media (min-width:768px) and (max-width:991px){
+
+}
+@media (min-width:992px) and (max-width:1199px){
+
+}
+@media (min-width:1200px){
+
+
+}

@@ -1,0 +1,351 @@
+// _faculty.scss
+
+//Available Weights is 100,300, 400, 700
+.facultylisting {
+	padding: 0 0 50px;
+	ul {
+		clear: both;
+		list-style: none;
+		margin-bottom: 0;
+		padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+		li.facultylist-item {
+			border-bottom: solid 1px $paleblue;
+//			height: 100%;
+			padding: 20px;
+			text-align: left;
+			transition-property: transform, opacity;
+			transition-duration: 0.7s;
+			background: white;
+			&.col-3 {
+  			width: 33%;
+			}
+			&.col-2 {
+  			width: 50%;
+			}
+			&.col-4 {
+  			width: 24%;
+			}
+			&:hover {
+				background-color: $lightenpageblue;
+			}
+			.fl-thumbnail {
+				float: left;
+			}
+			.fl-info {
+  			float: left;
+  			font-size: 14px;
+  			p {
+          padding: 0 0 4px 0;
+          margin: 0;
+          line-height: .75rem;
+  			}
+			}
+			a {
+  			h3 {
+					margin-top: 0;
+					margin-bottom: 5px;
+					padding-top: 10px;
+					padding-bottom: 0;
+				}
+				p {
+					margin: 0 0 0 0;
+					padding-top: 3px;
+					width: 100%;
+				}
+				ul.nostyle {
+					clear: none;
+					line-height: 1.2em;
+					margin-bottom: 0;
+					margin-right: 20px;
+					li {
+						padding-bottom: 5px;
+					}
+				}
+				.flisting-title {
+					font-style: italic;
+					font-weight: 400;
+					line-height: 1.1;
+					margin-bottom: 3px;
+				}
+				.flisting-taxonomy {
+					display: block;
+					line-height: 1.3;
+					margin-bottom: 3px;
+				}
+			}
+		}
+	}
+}
+
+///////////////////////////////////////////////////////////
+///////////// Single Faculty Page /////////////////////////
+///////////////////////////////////////////////////////////
+
+.single-profile {
+	.single-profile-details {
+		margin-bottom: 40px;
+		#bio-card {
+			font-size: 14px;
+  		ul {
+    		list-style: none;
+    		border-left: 1px solid $hazy;
+    		padding-left: 10px;
+    		text-transform: capitalize;
+  		}
+		}
+		img.profile-pic {
+			border:2px solid $paleblue;
+			height: 225px;
+			width: 180px;
+		}
+		h2 {
+			border-bottom: solid 1px $paleblue;
+			margin-bottom: 20px;
+			padding-bottom: 10px;
+		}
+		.single-profile-contact {
+    		border-left: 1px solid $hazy;
+    		padding-left: 12px;
+			a {
+  			color: $primarydark;
+  			text-decoration: underline;
+  			font-weight: 700;
+  			&:hover, &:focus, &:active {
+    			color: $linkhovercolor;
+  			}
+			}
+			.btn-secondary {
+  			background-color: white;
+  			color: $linkcolor;
+  			text-decoration: underline;
+  			&:hover, &:focus, &:active {
+    			color: $secondarydark;
+  			}
+			}
+		}
+	}
+	#right-sidebar {
+  	margin-top: 0;
+	}
+	.single-post-meta {
+  	margin-top: 15px;
+  	.section-header {
+    	margin-top: 0;
+  	}
+	}
+	ul.secondarynav {
+  	padding-left: 0;
+	}
+	.light-blue-background {
+		background-color: $lightenpageblue;
+		margin-top: 4px;
+		padding: 20px 0;
+	}
+
+	.single-profile-content {
+		padding-bottom: 50px;
+		a.active, li.active > a {
+  		font-weight: bold;
+		}
+	}
+
+	.nostyle {
+		list-style: none;
+		padding-left: 0;
+	}
+}
+
+.utp-logo {
+  transition: 200ms;
+  margin-bottom: 40px;
+  &:hover, &:active, &:focus {
+    opacity: 0.7;
+  }
+}
+
+.sfp-left {
+	margin-top:20px;
+	text-align: center;
+}
+
+.sfp-widget {
+	padding-top: 30px;
+	padding-right: 15px;
+	padding-bottom: 20px;
+	padding-left: 15px;
+	hr {
+		border-top-color: $primarycolor;
+	}
+}
+
+#sfp-tab {
+	.nav {
+		li {
+			a {
+				font-weight: 700;
+			}
+			&.active {
+				a {
+				  color: $secondarycolor;
+				}
+			}
+		}
+	}
+	.tab-content {
+		.tab-pane {
+  		margin-bottom: 45px;
+  		> p {
+    		margin-top: 10px;
+    		margin-bottom: 10px;
+    		margin-right: 15px;
+    		> a {
+	  			text-decoration: underline;
+    		}
+  		}
+  		h3, .h3, h4, .h4 {
+    		margin-bottom: 15px;
+  		}
+			.dl-horizontal {
+				margin-right: 0;
+				margin-left: 0;
+				dt {
+					font-size: 20px;
+					margin-bottom: 0;
+				}
+				dd {
+					margin-bottom: 15px;
+				}
+			}
+		}
+	}
+}
+
+.featured-faculty {
+  font-size: 14px;
+  > h5, .h5 {
+    margin-top: 20px;
+  }
+  > p, ul, ol {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  .btn-primary {
+    background-color: $primarycolor;
+    border-radius: 0;
+    border: 1px solid $primarycolor;
+    &:active, &:focus, &:hover {
+      background-color: $lightgray;
+      color: $primarydark;
+    }
+  }
+}
+
+@media (min-width:20px) and (max-width:767px) {
+  .featured-faculty {
+    border-top: 1px solid #FAFAFA;
+    padding-top: 30px;
+    margin-top: 20px;
+    }
+	.facultylisting ul li .faculty-member-list-item {
+    display: none;
+  }
+  .facultylisting ul li.facultylist-item {
+    border-bottom: none;
+    .col-2, .col-4 {
+      width: 33%;
+    }
+    .fl-thumbnail {
+      width: 100%;
+  		img.img-fluid {
+  			text-align: center;
+        margin: 0 auto 10px;
+  		}
+    }
+    .fl-info {
+      width: 100%;
+      text-align: center;
+			p {
+  			font-size: 12px;
+			}
+    }
+  }
+  .facultylisting ul li.facultylist-item a p {
+    float: left;
+  }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+  .facultylist-item {
+    .fl-thumbnail {
+			width: 25%;
+    }
+    .fl-info {
+			width: 70%;
+			padding-left: 17px;
+			p {
+  			font-size: 14px;
+			}
+			span {
+  			display: none;
+			}
+    }
+  }
+}
+@media (min-width:992px) {
+  .facultylist-item {
+    .fl-thumbnail {
+			width: 25%;
+			img {
+  			width: 100px;
+			}
+    }
+    .fl-info {
+			width: 75%;
+			padding-left: 7px;
+			p {
+  			font-size: 16px;
+			}
+			.faculty-member-list-item {
+  			font-size: 11px;
+  			display: inherit;
+			}
+    }
+  }
+}
+
+// SCHEDULE NOW
+
+#healthpost_appointments {
+  font-size: 14px;
+  line-height: 1.5rem;
+  h4.widget-item-title{
+    display: none;
+  }
+  &.availability_locations {
+    padding: 0 !important;
+  }
+  ul {
+    li {
+      background: none;
+      border: 0 !important;
+      a {
+        border: 0;
+      }
+    }
+  }
+  #location_phone {
+    border: 0 !important;
+    padding: 3px 0;
+  }
+  .time_slots_navigation a{
+    font-size: 9px !important;
+  }
+  .datepicker {
+    margin: 0 !important;
+  }
+}

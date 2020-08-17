@@ -1,0 +1,103 @@
+// _buttons.scss
+
+button, .btn, a.btn {
+  text-transform: uppercase;
+  transition: $linktransition;
+  font-size: 0.9em;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 1em 0;
+  line-height: 2em;
+  padding: 8px 15px;
+  color: $white;
+  border: none;
+  border-radius: 0;
+  &:hover, &:hover, &:focus {
+    background-color: $linkhovercolor;
+    border-color: $white;
+    color: $white;
+  }
+  &.hp-search-box-widget-submit-button {
+    background: $primarydark;
+    color: $white;
+    &:hover, &:hover, &:focus {
+      background: $secondarydark;
+      color: $white;
+    }
+  }
+  // SIZES
+  &-xs {
+    font-size: 0.65rem;
+  }
+  &-sm {
+    font-size: 0.75rem;
+  }
+  &-lg {
+    font-size: 1.15rem;
+  }
+  &-xl {
+    font-size: 1.3rem;
+  }
+
+  // COLORS
+  &-primary {
+    background: $primarycolor;
+  }
+  &-light {
+    background: $primarylight;
+  }
+
+  &-dark {
+    background: $primarydark;
+  }
+
+  &-secondary {
+    background: $secondarycolor;
+  }
+
+  &-accent {
+    background: $turquoise;
+  }
+  &-outline {
+    background: none;
+    border: 1px dotted $white;
+  }
+  &-search-submit {
+    float: right;
+    margin: -34px 0 0 0;
+    background: $primarydark;
+    color: white;
+    border-radius: 0;
+    padding: 2px 11px;
+    text-transform: uppercase;
+  }
+/* DONATE BUTTON  - BUTTONS.LESS */
+
+  &-donate {
+    margin: 0;
+    float: left;
+  	background-color: $primarycolor;
+  	font-size:1rem;
+    padding: 6px 13px;
+  	&:hover,
+  	&:active,
+  	&:focus {
+  		background-color: fade($darkgray, 85%) !important;
+  	}
+  }
+}
+
+
+/* SEARCH THIS SITE BTN */
+#404search {
+  .btn {
+    height: auto;
+    border: 1px solid $primarydark;
+    background-color: $primarydark;
+    padding: 10px;
+    .fa {
+      color: white;
+      font-size: 16px;
+    }
+  }
+}

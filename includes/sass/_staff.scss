@@ -1,0 +1,67 @@
+// _staff.scss
+
+.staff-listing {
+	ul {
+		clear: both;
+		list-style: none;
+		margin-bottom: 0;
+		padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: flex-start;
+    align-items: stretch;
+		li {
+			border-bottom: solid 1px $paleblue;
+			padding: 20px;
+			text-align: left;
+			transition-property: transform, opacity;
+			transition-duration: 0.7s;
+			width: 49%; // specify for diff media screens
+			.attachment-featured-faculty {
+  			margin-right: 20px;
+  			margin-bottom: 10px;
+			}
+			&:hover {
+				background-color: rgba(24, 95, 131, 0.1);
+			}
+			p {
+  			margin-top: 0;
+  			width: 100%;
+			}
+			a {
+//				display: block;
+//				font-size: 14px;
+//  			min-height: 126px;
+		  }
+		}
+  }
+}
+
+
+@media (min-width:20px) and (max-width:767px) {
+}
+
+@media (min-width:768px) and (max-width:991px) {
+
+}
+@media (min-width:992px) and (max-width:1199px) {
+	.staff-listing {
+		ul {
+			li.attachment-featured-faculty {
+    			float: left;
+  		}
+		}
+	}	
+}
+@media (min-width:1200px) {
+
+	.staff-listing {
+		ul {
+			li.attachment-featured-faculty {
+    			float: left;
+  		}
+		}
+	}	
+}

@@ -1,0 +1,60 @@
+// _twitter.scss
+.twitter-left {
+  padding: 14px 0 0;
+  text-align: center;
+    .fa {
+      padding: 14px;
+      margin: 5px;
+      width: 50px;
+      height: 50px;
+      list-style-type: none;
+      display: inline-flex;
+      border-radius: 50%;
+      font-size: 1.25em;
+      background-color: #6cddff;
+      color: white;
+    }
+}
+.twitter-right {
+  padding: 0;
+}
+.ticker {
+  overflow: hidden;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color:lighten(#6cddff, 30%);
+  height: 90px;
+  border-left: 3px solid #6cddff;
+  li {
+    height: 100%;
+    a {
+      height: 100%;
+      width: 100%;
+      display: block;
+      padding: 18px 20px;
+      color: #373737;
+      transition: ease-in 100ms all;
+      margin-bottom: 20px;
+      font-size: 1em;
+      .small {
+        font-size: .825em;
+      }
+      &:hover {
+        margin-left: -3px;
+        background-color: lighten(#CCC, 15%);
+      }
+      &:focus, &:active {
+        background: black;
+        color: white;
+        margin-left: -3px;
+      }
+    }
+  }
+}
+
+@media (max-width:767px){
+  .ticker {
+    height: 125px;
+  }
+}
